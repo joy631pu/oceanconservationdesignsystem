@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanConservationPatternLibrary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="navWrap">
+        <img src="images/Pattern.png" alt="logo" class="logo">
+        <input type="checkbox" id="navToggle" class="navToggle">
+        <label for="navToggle" class="navToggleLabel"><span></span></label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Guidelines</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Footer</a></li>
+                <li><a href="#">Grids</a></li>
+                <li><a href="#" class="btn">Example Site</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="cta cta1">
+        <h1>Navigation</h1>
+        <p></p>
+    </section>
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="action">
+        <details>
+            <summary> HTML, CSS and JavaScript Code (Navigation)</summary>
+            <br><br>
+            <h3>HTML Code </h3>
+            <div>
+                <xmp>
+                    <div class="topnav" id="myTopnav">
+                    <a href="#" 
+                     class="active">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Gallery</a>
+                    <a href="javascript:void(0);" 
+                    class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                    </div>
+                </xmp>
+            </div>
+            <h3>CSS Code</h3>
+            <div>
+                <xmp>
+                    .topnav {
+                    overflow: hidden;
+                    background-color: #333;
+                    }
+
+                    .topnav a {
+                    float: left;
+                    display: block;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                    }
+
+                    .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                    }
+
+                    .topnav a.active {
+                    background-color: #04AA6D;
+                    color: white;
+                    }
+
+                    .topnav .icon {
+                    display: none;
+                    }
+
+                    @media screen and (max-width: 700px) {
+                    .topnav a:not(:first-child) {display: none;}
+                    .topnav a.icon {
+                    float: right;
+                    display: block;
+                    }
+                    }
+
+                    @media screen and (max-width: 700px) {
+                    .topnav.responsive {position: relative;}
+                    .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    }
+                    .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    }
+                    }
+                </xmp>
+            </div>
+            <h3>JavaScript Code</h3>
+            <div>
+                <xmp>
+                    <script>
+                        function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                          if (x.className === "topnav") {
+                               x.className += " responsive";
+                          } else {
+                               x.className = "topnav";
+                          }
+                        }
+                    </script>
+
+                </xmp>
+            </div>
+        </details>
+    </div>
+
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
