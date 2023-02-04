@@ -69,6 +69,13 @@
           </div>
       </details>
         </div>
+
+        <section class="cta cta1">
+            <h1>Cards</h1>
+            <p></p>
+        </section>
+
+
         <ul class="cards">
             <li class="cards_item">
               <div class="card">
@@ -103,7 +110,7 @@
         </ul>
         <div class="action">
             <details>
-                <summary> HTML, and CSS Code (Cards)</summary>
+                <summary> HTML and CSS Code (Cards)</summary>
                 <br><br>
                 <h3>HTML Code </h3>
                 <div>
@@ -206,6 +213,303 @@
                 </div>
             </details>
         </div>
+
+        <section class="cta cta1">
+            <h1>Carousels</h1>
+            <p></p>
+        </section>
+
+        <div class="slides">
+            <div class="slide">
+              <img src="images/JoyBaruaScubaDiving.jpg" alt="Scuba Diving">
+            </div>
+            <div class="slide">
+              <img src="images/JoyBaruaSeal.jpg" alt="Seal">
+            </div>
+            <div class="slide">
+              <img src="images/JoyBaruaSeaVentures.jpg" alt="Sea Ventures">
+            </div>
+            
+            <div class="navigation">
+              <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+              <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+            </div>
+          </div>
+      
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+      
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+      
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("slide");
+              if (n > slides.length)
+              {
+                slideIndex = 1;
+              }
+              if (n < 1)
+              {
+                slideIndex = slides.length
+              }
+              for (i = 0; i < slides.length; i++)
+              {
+                slides[i].style.display = "none";
+              }
+              slides[slideIndex-1].style.display = "block";
+            }
+          </script>
+
+<div class="action">
+    <details>
+        <summary> HTML, CSS and JavaScript Code (Carousels)</summary>
+        <br><br>
+        <h3>HTML Code </h3>
+        <div>
+            <xmp>
+                <div class="slides">
+                    <div class="slide">
+                      <img src="images/JoyBaruaScubaDiving.jpg" alt="Scuba Diving">
+                    </div>
+                    <div class="slide">
+                      <img src="images/JoyBaruaSeal.jpg" alt="Seal">
+                    </div>
+                    <div class="slide">
+                      <img src="images/JoyBaruaSeaVentures.jpg" alt="Sea Ventures">
+                    </div>
+                    
+                    <div class="navigation">
+                      <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+                      <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+                    </div>
+                  </div>
+            </xmp>
+        </div>
+        <h3>CSS Code</h3>
+        <div>
+            <xmp>
+                .slides{
+                    width: 100%;
+                    position: relative;
+                  }
+                  
+                  .slides .slide{
+                    display: none;
+                  }
+                  
+                  .slides .slide img{
+                    width: 100%;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                  }
+                  
+                  .slides .navigation{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                  }
+                  
+                  .slides .navigation .prev, .slides .navigation .next{
+                    cursor: pointer;
+                    padding: 16px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: white;
+                    background: rgba(0,0,0,0.2);
+                    user-select: none;
+                    transition: 0.6s ease;
+                  }
+                  
+                  .slides .navigation .prev:hover, .slides .navigation .next:hover{
+                    background: rgba(0,0,0,1);
+                  }
+                  
+                  @keyframes fade {
+                    from{opacity: 0.3}
+                    to {opacity: 1}
+                  }
+                  
+                  @media (max-width: 992px){
+                    .slides .navigation .prev, .slides .navigation .next{
+                      font-size: 18px;
+                      padding: 13px;
+                    }
+                  }
+                  
+                  @media (max-width: 768px){
+                    .slides .navigation .prev, .slides .navigation .next{
+                      font-size: 15px;
+                      padding: 10px;
+                    }
+                  }
+                  
+                  @media (max-width: 576px){
+                    .slides .navigation .prev, .slides .navigation .next{
+                      font-size: 12px;
+                      padding: 7px;
+                    }
+                  }
+                  
+                  @media (max-width: 360px){
+                    .slides .navigation .prev, .slides .navigation .next{
+                      font-size: 11px;
+                      padding: 6px;
+                    }
+                  }
+            </xmp>
+        </div>
+        <div>
+            <h3>JavaScript Code</h3>
+            <xmp>
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+              
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+              
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("slide");
+                      if (n > slides.length)
+                      {
+                        slideIndex = 1;
+                      }
+                      if (n < 1)
+                      {
+                        slideIndex = slides.length
+                      }
+                      for (i = 0; i < slides.length; i++)
+                      {
+                        slides[i].style.display = "none";
+                      }
+                      slides[slideIndex-1].style.display = "block";
+                    }
+                  </script>
+
+            </xmp>
+        </div>
+    </details>
+</div>
+
+<section class="cta cta1">
+    <h1>Modal</h1>
+    <p></p>
+</section>
+
+<div class="wrapper">
+    <a class="button" href="#popup1" >Marine Conservation</a></p>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Steps</h2>
+          <br>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <ul>
+            <li>Stop using plastics.</li>
+            <li>Avoid overfishing.</li>
+            <li>Protect our coral reef.</li>
+            <li>Don't trow waste at any water source.</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="action">
+    <details>
+        <summary> HTML, and CSS Code (Modal)</summary>
+        <br><br>
+        <h3>HTML Code </h3>
+        <div>
+            <xmp>
+            <a class="button" href="#popup1" >Marine Conservation</a></p>
+            <div id="popup1" class="overlay">
+            <div class="popup">
+            <h2>Steps</h2>
+            <br>
+             <a class="close" href="#">&times;</a>
+             <div class="content">
+            <ul>
+            <li>Stop using plastics.</li>
+            <li>Avoid overfishing.</li>
+            <li>Protect our coral reef.</li>
+            <li>Don't trow waste at any water source.</li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </xmp>
+        </div>
+        <h3>CSS Code</h3>
+        <div>
+            <xmp>
+                .overlay {
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.7);
+                    transition: opacity 500ms;
+                    visibility: hidden;
+                    opacity: 0;
+                  }
+                  .overlay:target {
+                    visibility: visible;
+                    opacity: 1;
+                  }
+                  
+                  .popup {
+                    margin: 70px auto;
+                    padding: 20px;
+                    background: #fff;
+                    border-radius: 5px;
+                    width: 30%;
+                    position: relative;
+                    transition: all 5s ease-in-out;
+                  }
+                  .popup h2 {
+                    margin-top: 0;
+                    color: #333;
+                    font-family: Tahoma, Arial, sans-serif;
+                  }
+                  
+                  .popup .close {
+                    position: absolute;
+                    top: 20px;
+                    right: 30px;
+                    transition: all 200ms;
+                    font-size: 30px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #333;
+                  }
+                  .popup .close:hover {
+                    color: #06D85F;
+                  }
+                  .popup .content {
+                    max-height: 30%;
+                    overflow: auto;
+                  }
+
+                  @media screen and (max-width:749px){
+                    .popup{
+                      width: 70%;
+                    }
+                  }
+            </xmp>
+        </div>
+        
+    </details>
+</div>
           
 </body>
 </html>
