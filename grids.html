@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanConservationPatternLibrary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="navWrap">
+        <img src="images/Pattern.png" alt="logo" class="logo">
+        <input type="checkbox" id="navToggle" class="navToggle">
+        <label for="navToggle" class="navToggleLabel"><span></span></label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Guidelines</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="footer.html">Footer</a></li>
+                <li><a href="grids.html">Grids</a></li>
+                <li><a href="#" class="btn">Example Site</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="cta cta1">
+        <h1>Grids</h1>
+        <p></p>
+    </section>
+
+    <div class="grid-container2">
+        <div class="grid-item2">Column 1</div>
+        <div class="grid-item2">Column 2</div>  
+    </div>
+    
+    <div class="action">
+        <details>
+            <summary> HTML, CSS and JavaScript Code (Grids)</summary>
+            <br><br>
+            <h3>HTML Code </h3>
+            <div>
+                <xmp>
+                    <div class="grid-container2">
+                        <div class="grid-item2">Column 1</div>
+                        <div class="grid-item2">Column 2</div>  
+                    </div>
+                   
+                </xmp>
+            </div>
+            <h3>CSS Code</h3>
+            <div>
+                <xmp>
+                    .grid-container2 {
+                        display: grid;
+                        grid-template-columns: 100%;
+                        background-color: #333333;
+                        padding: 10px;
+                        width: 100%;
+                      }
+                      
+                      
+                      .grid-item2 {
+                        background-color: white;
+                        border: 1px solid black;
+                        padding: 20px;
+                        font-size: 20px;
+                        text-align: center;
+                      }                    
+                       
+                      
+                      @media screen and (min-width:700px){
+                      
+                        .grid-container2 {
+                          display: grid;
+                          grid-template-columns: 49.5% 49.5%;
+                          background-color: #333333;
+                          padding: 10px;
+                          column-gap: 1%;
+                          width: 100%;
+                        }
+                        .grid-item2 {
+                          background-color: white;
+                          border: 1px solid black;
+                          padding: 20px;
+                          font-size: 20px;
+                          text-align: center;
+                        }
+                        
+                      }
+                    
+                </xmp>
+            </div>
+        </details>
+    </div>
+
+    </div>
+   
+</body>
+
+</html>
