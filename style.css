@@ -84,7 +84,12 @@
     width: 50px;
   }
 
-  /*--Navigation--*/
+  
+  /* Navigation 
+ The following CSS code which is regarding navigation bar was taken from a 
+ linkledin learning tutorial and then modified
+  The link of the tutorial is given below
+   https://www.linkedin.com/learning/css-combining-grid-and-flexbox/custom-web-layouts-with-grid-and-flexbox?autoplay=true  */
 .navWrap {
     position: sticky; 
     top: 0;
