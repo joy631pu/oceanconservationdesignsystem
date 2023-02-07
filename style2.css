@@ -70,7 +70,7 @@
   
 /*--Button--*/
   .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #6dcff6; /* Soft Blue */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -82,7 +82,7 @@
     cursor: pointer;
   }
   
-  .button2 {background-color: #008CBA;} /* Blue */
+  .button2 {background-color: #4794d0;} /* Blue */
 
 .btn {
   color: #ffffff;
