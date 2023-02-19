@@ -10,6 +10,52 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap">  
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    
+<!--CSS code for e-mail sign up section-->
+<style>
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.button {
+    background-color: #6dcff6; /* Soft Blue */
+    border: none;
+    border-radius: 28px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+/*--Apply media query--*/
+@media (max-width: 700px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -224,4 +270,79 @@
           </xmp>
       </div>
   </details>
-    </div><!--HTML and CSS code for footer section ends-->
+  </div>
+  <!--HTML and CSS code for footer section ends-->
+  <section class="cta cta1">
+    <h1>Email SignUp</h1>
+  </section>
+  <section class="action">
+    <form class="form-inline">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter email" name="email">
+      <button class="button" type="submit">Submit</button>
+    </form>
+  </section>
+  <div class="action">
+    <details>
+      <summary> HTML and CSS code  (Email SignUp)</summary>
+      <br><br>
+      <h3>HTML Code </h3>
+      <div>
+          <xmp>
+            <form class="form-inline">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Enter email" name="email">
+              <button class="button" type="submit">Submit</button>
+            </form>  
+          </xmp>
+      </div>
+      <h3>CSS Code</h3>
+      <div>
+          <xmp>
+            .form-inline {  
+              display: flex;
+              flex-flow: row wrap;
+              align-items: center;
+            }
+            
+            .form-inline label {
+              margin: 5px 10px 5px 0;
+            }
+            
+            .form-inline input {
+              vertical-align: middle;
+              margin: 5px 10px 5px 0;
+              padding: 10px;
+              background-color: #fff;
+              border: 1px solid #ddd;
+            }
+            
+            .button {
+                background-color: #6dcff6; /* Soft Blue */
+                border: none;
+                border-radius: 28px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+              }
+            
+            @media (max-width: 700px) {
+              .form-inline input {
+                margin: 10px 0;
+              }
+              
+              .form-inline {
+                flex-direction: column;
+                align-items: stretch;
+              }
+            }
+          </xmp>
+      </div>
+  </details>
+    </div> 
+  
