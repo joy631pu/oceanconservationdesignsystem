@@ -56,6 +56,28 @@
           slides[slideIndex-1].style.display = "block";
         }
       </script><!--Carousel sections ends-->  
-          
+      <!--Navigation starts-->
+      <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="companyprofile.html">Company Profile</a>
+        <a href="index.html">Back to Design System</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div><!--Navigation ends-->
+    
+<!--JavaScript code for navigation-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+</script>    
 </body>
 </html>
