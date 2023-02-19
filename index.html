@@ -9,6 +9,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+      /* CSS styles for color */
+.columncolor {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+
+.rowcolor {margin: 0 -5px;}
+
+
+.rowcolor:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Apply media query */
+@media screen and (max-width: 700px) {
+  .columncolor {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+.cardcolor {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 16px;
+  text-align: center;
+  color:black;
+  font-size:larger;
+}
+    </style>
 </head>
 <body>
 
@@ -37,17 +74,37 @@
         <h1>Color</h1>
         <p></p>
       </section>
-      <section class="color" id="color">
-        <h1></h1>
-        <ul class="coloreach">
-          <li><img src="images/Color1.png" alt="color"></li>
-          <li><img src="images/Pattern.png" alt="color"></li>
-          <li><img src="images/Color2.png" alt="color"></li>
-          <li><img src="images/Pattern.png" alt="color"></li>
-          <li><img src="images/Color3.png" alt="color"></li>
-        </ul>
-        <p></p>
-      </section><!--Color Section Ends-->
+      <section class="action">
+      <div class="rowcolor">
+        <div class="columncolor">
+          <div class="cardcolor" style="background-color:#6dcff6"> 
+            <h2>Soft Blue</h2>
+            <p>HEX - #6dcff6</p>
+            <p>RGB - (109, 207, 246)</p>
+            <p>CYMK - (56%, 16%, 0%, 4%)</p>
+          </div>
+        </div>
+
+        <div class="columncolor">
+          <div class="cardcolor" style="background-color:#4794d0"> 
+            <h2>Moderate Blue</h2>
+            <p>HEX - #4794d0</p>
+            <p>RGB - (71, 148, 208)</p>
+            <p>CYMK - (66%, 29%, 0%, 18%)</p>
+          </div>
+        </div>
+
+        <div class="columncolor">
+          <div class="cardcolor" style="background-color:#125788;color: azure;"> 
+            <h2>Dark Blue</h2>
+            <p>HEX - #125788</p>
+            <p>RGB - (18, 87, 136)</p>
+            <p>CYMK - (87%, 36%, 0%, 47%)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!--Color Section Ends-->
       <!--HTML and CSS code regarding colors-->
       <div class="action">
       <details>
