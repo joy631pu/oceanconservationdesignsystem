@@ -10,6 +10,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="style.css">
+<!--Required CSS code for Company Profile section
+  where carousels/sliders is applied--><!--Embedded CSS-->
+  <!--The following CSS code which is regarding carousels/sliders was taken from codepen.io site and then modified
+      the link of the copied code is as follows: https://codepen.io/hershkirsh/pen/BXBprB -->
+<style>
+  #slider-container {
+  height: 300px;
+  width: 85vw;
+  max-width: 1400px;
+  background: #6dcff6;
+  box-shadow: 5px 5px 8px gray inset;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#slider-container .btn {
+  position: absolute;
+  top: calc(50% - 30px);
+  height: 30px;
+  width: 30px;
+  border-left: 8px solid black;
+  border-top: 8px solid black;
+}
+
+#slider-container .btn:hover {
+  transform: scale(1.2);
+}
+
+#slider-container .btn.inactive {
+  border-color: rgb(153, 121, 126)
+}
+
+#slider-container .btn:first-of-type {
+  transform: rotate(-45deg);
+  left: 10px
+}
+
+#slider-container .btn:last-of-type {
+  transform: rotate(135deg);
+  right: 10px;
+}
+
+#slider-container #slider {
+  display: flex;
+  width: 1000%;
+  height: 100%; 
+  transition: all .5s;
+}
+
+#slider-container #slider .slide {
+  height: 90%;
+  margin: auto 10px;
+  /* background-color:aliceblue; */
+  box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+  display: grid;
+  place-items: center;
+}
+
+#slider-container #slider .slide span {
+  color: white;
+  font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+
+  #slider-container #slider .slide {
+    width: calc(2.5% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #slider-container #slider .slide {
+    width: calc(3.3333333% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  #slider-container #slider .slide {
+    width: calc(5% - 20px);
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  #slider-container #slider .slide {
+    width: calc(10% - 20px);
+  }
+
+}
+</style>  <!--Required CSS Code for Company Profile section ends-->
 </head>
 <body>
     <!--Carousel/Slider section starts-->
@@ -118,7 +214,33 @@
           </div>
         </li>
     </ul><!--Blog section ends-->
-    
+  
+  <!--Company Profile starts-->
+  <!--The following HTML code which is regarding carousels/sliders was taken from codepen.io site and then modified
+      the link of the copied code is as follows: https://codepen.io/hershkirsh/pen/BXBprB -->
+  <section class="cta cta1">
+    <h4>Want to Take An Undersea Experience</h4>
+    <p>Click on any image below to visit the specific company's website</p>
+</section>
+  <section class="action">
+  <div id="container">
+    <div id="slider-container">
+      <span onclick="slideRight()" class="btn"></span>
+        <div id="slider">
+          <div class="slide"><span><a href="https://www.mooreaunderwaterexperience.com/en/" target="_blank"><img src="images/MooreaLogo.PNG" alt="Moorea" style="height: 200px;"></a></span></div>
+          <div class="slide"><span><a href="https://greenfins.net/blog/explorer-ventures-liveaboard-fleet/" target="_blank"><img src="images/ExploreVentures.jpg" alt="ExploreVentures" style="height: 200px;"></a><span></div>
+          <div class="slide"><span><a href="https://oceanwide-expeditions.com/" target="_blank"><img src="images/Oceanwide20Expeditions20Logo.jpg" alt="Ocean Expedition" style="height: 200px;"></a></span></div>          
+          <div class="slide"><span><a href="https://www.visitcostarica.com/en/costa-rica/things-to-do/adventure/diving-in-costa-rica?utm_actcampaign=62976&gclid=EAIaIQobChMI-cSt87Kj_QIVFDOtBh2lMgelEAAYASAAEgKLnfD_BwE" target="_blank"><img src="images/EssentialCostaRica.PNG" alt="EssentialCostaRica" style="height: 200px;"></a></span></div>
+          <div class="slide"><span><a href="https://scubagetaway.com/" target="_blank"><img src="images/Scuba Gateway.jpg" alt="Scuba Gateway" style="height: 200px;"></a></span></div>
+          <div class="slide"><span><a href="https://www.deepbluedivecenter.com/" target="_blank"><img src="images/DeepBlueDiveCenter.PNG" alt="Deep Blue Dive Center" style="height: 200px;"></a></span></div>
+          
+      </div>
+      <span onclick="slideLeft()" class="btn"></span>
+    </div>
+  </div>
+</section><!--Company Profile Ends-->
+<!--External JavaScript file which is used for Company Profile section-->
+<script src="app.js"></script>    
 <!--JavaScript code for navigation-->
 <script>
     function myFunction() {
