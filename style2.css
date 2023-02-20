@@ -472,7 +472,7 @@ footer {
 /*--Media Query for Grids--*/
 @media screen and (min-width:700px){
 
-  @media screen and (min-width:700px){
+  
                       
     .grid-container4 {
       display: grid;
@@ -490,7 +490,7 @@ footer {
       text-align: center;
     }
     
-  }
+  
 
   .grid-container2 {
     display: grid;
@@ -517,7 +517,7 @@ footer {
   }
   
   
-  .grid-item2 {
+  .grid-item3 {
     background-color: white;
     border: 1px solid black;
     padding: 20px;
@@ -526,5 +526,58 @@ footer {
   }
   
 }
+/*--CSS code for gallery section starts--*/
+.galleryexample {
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #333333;
+  padding: 10px;
+  width: 100%;
+}
+
+.gallery-item {
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+@media screen and (min-width:550px){
+  .galleryexample {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    background-color: #333333;
+    padding: 10px;
+    width: 100%;
+  }
+  .gallery-item {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+}
+
+@media screen and (min-width:800px){
+  .galleryexample {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: #333333;
+    padding: 10px;
+    width: 100%;
+  }
+  .gallery-item {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+}/*--CSS Code for gallery section ends--*/
 
 
