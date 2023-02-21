@@ -17,7 +17,7 @@
 /*--Sample Navigation for example site--*/
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #125788;
   }
   
   .topnav a {
@@ -36,7 +36,7 @@
   }
   
   .topnav a.active {
-    background-color: #4794d0;
+    background-color: #6dcff6;
     color: white;
   }
 
