@@ -39,6 +39,12 @@
     background-color: #4794d0;
     color: white;
   }
+
+  .activehome{
+    background-color: #4794d0;
+    color: white;
+    margin-left: 300px;
+  }
   
   .topnav .icon {
     display: none;
@@ -64,6 +70,12 @@
       float: none;
       display: block;
       text-align: left;
+    }
+
+    .activehome{
+      background-color: #4794d0;
+      color: white;
+      margin-left: 0;
     }
   }
 
