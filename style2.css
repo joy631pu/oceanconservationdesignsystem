@@ -40,9 +40,7 @@
     color: white;
   }
 
-  .activehome{
-    background-color: #4794d0;
-    color: white;
+  .marginhome{
     margin-left: 300px;
   }
   
@@ -71,12 +69,14 @@
       display: block;
       text-align: left;
     }
+   
+  }
 
-    .activehome{
-      background-color: #4794d0;
-      color: white;
+  @media  screen and (max-width: 900px) {
+    .marginhome {
       margin-left: 0;
     }
+    
   }
 
   
