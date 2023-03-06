@@ -590,7 +590,8 @@ footer {
     text-align: center;
   }
 }/*--CSS Code for gallery section ends--*/
-
+/*--The following CSS code which is regarding carousels/sliders was taken from codepen.io site and then modified
+ the link of the copied code is as follows: https://codepen.io/hershkirsh/pen/BXBprB--*/
 #slider-container {
   height: 300px;
   position: relative;
