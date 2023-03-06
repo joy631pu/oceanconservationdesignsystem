@@ -232,52 +232,27 @@
         
 <!--The following html code which is related to carousel/slider was taken from a 
  youtube tutorial and then modified-->
- <!--The link of the tutorial is given below
-   https://www.youtube.com/watch?v=vUaCB-uOOes  -->
+ <!--The following CSS code which is regarding carousels/sliders was taken from codepen.io site and then modified
+ the link of the copied code is as follows: https://codepen.io/hershkirsh/pen/BXBprB  -->
 
-        <div class="slides">
-            <div class="slide">
-              <img src="https://picsum.photos/500/300/?image=10" alt="picsum-image1">
-            </div>
-            <div class="slide">
-              <img src="https://picsum.photos/500/300/?image=5" alt="picsum-image2">
-            </div>
-            <div class="slide">
-              <img src="https://picsum.photos/500/300/?image=11" alt="picsum-image3">
-            </div>
+   <section>
+    <div id="container">
+      <div id="slider-container">
+        <span onclick="slideRight()" class="btn"></span>
+          <div id="slider">
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" alt="Sample Image" style="height: 200px;"></a></span></div>
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" alt="Sample Image" style="height: 200px;"></a><span></div>
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" alt="Sample Image" style="height: 200px;"></a></span></div> 
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" alt="Sample Image" style="height: 200px;"></a></span></div>
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" alt="Sample Image" style="height: 200px;"></a><span></div>
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" alt="Sample Image" style="height: 200px;"></a></span></div>          
             
-            <div class="navigation">
-              <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
-              <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
-            </div>
-          </div>
-      
-          <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-      
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-      
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("slide");
-              if (n > slides.length)
-              {
-                slideIndex = 1;
-              }
-              if (n < 1)
-              {
-                slideIndex = slides.length
-              }
-              for (i = 0; i < slides.length; i++)
-              {
-                slides[i].style.display = "none";
-              }
-              slides[slideIndex-1].style.display = "block";
-            }
-          </script><!--Carousel sections ends-->
+            
+        </div>
+        <span onclick="slideLeft()" class="btn"></span>
+      </div>
+    </div>
+  </section><!--Carousel sections ends-->
 
 <!--HTML, CSS and JavaScript code for Carousels starts-->
 <div class="action">
@@ -287,130 +262,207 @@
         <h3>HTML Code </h3>
         <div>
             <xmp>
-                <div class="slides">
-                    <div class="slide">
-                      <img src="https://picsum.photos/500/300/?image=10" alt="picsum-image1">
+              <section>
+                <div id="container">
+                  <div id="slider-container">
+                    <span onclick="slideRight()" class="btn"></span>
+                      <div id="slider">
+                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" 
+                          alt="Sample Image" style="height: 200px;"></a></span></div>
+                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" 
+                          alt="Sample Image" style="height: 200px;"></a><span></div>
+                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" 
+                          alt="Sample Image" style="height: 200px;"></a></span></div> 
+                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" 
+                          alt="Sample Image" style="height: 200px;"></a></span></div>
+                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" 
+                          alt="Sample Image" style="height: 200px;"></a><span></div>
+                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" 
+                          alt="Sample Image" style="height: 200px;"></a></span></div>          
+                        
+                        
                     </div>
-                    <div class="slide">
-                      <img src="https://picsum.photos/500/300/?image=5" alt="picsum-image2">
-                    </div>
-                    <div class="slide">
-                      <img src="https://picsum.photos/500/300/?image=11" alt="picsum-image3">
-                    </div>
-                    
-                    <div class="navigation">
-                      <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
-                      <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
-                    </div>
+                    <span onclick="slideLeft()" class="btn"></span>
                   </div>
+                </div>
+              </section>
             </xmp>
         </div>
         <h3>CSS Code</h3>
         <div>
             <xmp>
-                .slides{
-                    width: 100%;
-                    position: relative;
-                  }
-                  
-                  .slides .slide{
-                    display: none;
-                  }
-                  
-                  .slides .slide img{
-                    width: 100%;
-                    animation-name: fade;
-                    animation-duration: 1.5s;
-                  }
-                  
-                  .slides .navigation{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                  }
-                  
-                  .slides .navigation .prev, .slides .navigation .next{
-                    cursor: pointer;
-                    padding: 16px;
-                    font-weight: bold;
-                    font-size: 20px;
-                    color: white;
-                    background: rgba(0,0,0,0.2);
-                    user-select: none;
-                    transition: 0.6s ease;
-                  }
-                  
-                  .slides .navigation .prev:hover, .slides .navigation .next:hover{
-                    background: rgba(0,0,0,1);
-                  }
-                  
-                  @keyframes fade {
-                    from{opacity: 0.3}
-                    to {opacity: 1}
-                  }
-                  
-                  @media (max-width: 992px){
-                    .slides .navigation .prev, .slides .navigation .next{
-                      font-size: 18px;
-                      padding: 13px;
-                    }
-                  }
-                  
-                  @media (max-width: 768px){
-                    .slides .navigation .prev, .slides .navigation .next{
-                      font-size: 15px;
-                      padding: 10px;
-                    }
-                  }
-                  
-                  @media (max-width: 576px){
-                    .slides .navigation .prev, .slides .navigation .next{
-                      font-size: 12px;
-                      padding: 7px;
-                    }
-                  }
-                  
-                  @media (max-width: 360px){
-                    .slides .navigation .prev, .slides .navigation .next{
-                      font-size: 11px;
-                      padding: 6px;
-                    }
-                  }
+              #slider-container {
+                height: 300px;
+                position: relative;
+                overflow: hidden;
+                padding: 20px;
+              }
+              
+              #slider-container .btn {
+                position: absolute;
+                top: calc(50% - 30px);
+                height: 30px;
+                width: 30px;
+                border-left: 8px solid black;
+                border-top: 8px solid black;
+              }
+              
+              #slider-container .btn:hover {
+                transform: scale(1.2);
+              }
+              
+              #slider-container .btn.inactive {
+                border-color: rgb(153, 121, 126)
+              }
+              
+              #slider-container .btn:first-of-type {
+                transform: rotate(-45deg);
+                left: 10px
+              }
+              
+              #slider-container .btn:last-of-type {
+                transform: rotate(135deg);
+                right: 10px;
+              }
+              
+              #slider-container #slider {
+                display: flex;
+                width: 1000%;
+                height: 100%; 
+                transition: all .5s;
+              }
+              
+              #slider-container #slider .slide {
+                height: 90%;
+                margin: auto 10px;
+                display: grid;
+                place-items: center;
+              }
+              
+              #slider-container #slider .slide span {
+                color: white;
+                font-size: 150px;
+              }
+              
+              @media only screen and (min-width: 1100px) {
+              
+                #slider-container #slider .slide {
+                  width: calc(2.5% - 20px);
+                }
+              
+              }
+              
+              @media only screen and (max-width: 1100px) {
+              
+                #slider-container #slider .slide {
+                  width: calc(3.3333333% - 20px);
+                }
+              
+              }
+              
+              @media only screen and (max-width: 900px) {
+              
+                #slider-container #slider .slide {
+                  width: calc(5% - 20px);
+                }
+              
+              }
+              
+              @media only screen and (max-width: 480px) {
+              
+                #slider-container #slider .slide {
+                  width: calc(10% - 20px);
+                }
+              
+              }
             </xmp>
         </div>
         <div>
             <h3>JavaScript Code</h3>
             <xmp>
-                <script>
-                    var slideIndex = 1;
-                    showSlides(slideIndex);
-              
-                    function plusSlides(n) {
-                      showSlides(slideIndex += n);
-                    }
-              
-                    function showSlides(n) {
-                      var i;
-                      var slides = document.getElementsByClassName("slide");
-                      if (n > slides.length)
-                      {
-                        slideIndex = 1;
-                      }
-                      if (n < 1)
-                      {
-                        slideIndex = slides.length
-                      }
-                      for (i = 0; i < slides.length; i++)
-                      {
-                        slides[i].style.display = "none";
-                      }
-                      slides[slideIndex-1].style.display = "block";
-                    }
-                  </script>
+<script>
+var container = document.getElementById('container')
+var slider = document.getElementById('slider');
+var slides = document.getElementsByClassName('slide').length;
+var buttons = document.getElementsByClassName('btn');
+
+
+var currentPosition = 0;
+var currentMargin = 0;
+var slidesPerPage = 0;
+var slidesCount = slides - slidesPerPage;
+var containerWidth = container.offsetWidth;
+var prevKeyActive = false;
+var nextKeyActive = true;
+
+window.addEventListener("resize", checkWidth);
+
+function checkWidth() {
+    containerWidth = container.offsetWidth;
+    setParams(containerWidth);
+}
+
+function setParams(w) {
+    if (w < 551) {
+        slidesPerPage = 1;
+    } else {
+        if (w < 901) {
+            slidesPerPage = 2;
+        } else {
+            if (w < 1101) {
+                slidesPerPage = 3;
+            } else {
+                slidesPerPage = 4;
+            }
+        }
+    }
+    slidesCount = slides - slidesPerPage;
+    if (currentPosition > slidesCount) {
+        currentPosition -= slidesPerPage;
+    };
+    currentMargin = - currentPosition * (100 / slidesPerPage);
+    slider.style.marginLeft = currentMargin + '%';
+    if (currentPosition > 0) {
+        buttons[0].classList.remove('inactive');
+    }
+    if (currentPosition < slidesCount) {
+        buttons[1].classList.remove('inactive');
+    }
+    if (currentPosition >= slidesCount) {
+        buttons[1].classList.add('inactive');
+    }
+}
+
+setParams();
+
+function slideRight() {
+    if (currentPosition != 0) {
+        slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
+        currentMargin += (100 / slidesPerPage);
+        currentPosition--;
+    };
+    if (currentPosition === 0) {
+        buttons[0].classList.add('inactive');
+    }
+    if (currentPosition < slidesCount) {
+        buttons[1].classList.remove('inactive');
+    }
+};
+
+function slideLeft() {
+    if (currentPosition != slidesCount) {
+        slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
+        currentMargin -= (100 / slidesPerPage);
+        currentPosition++;
+    };
+    if (currentPosition == slidesCount) {
+        buttons[1].classList.add('inactive');
+    }
+    if (currentPosition > 0) {
+        buttons[0].classList.remove('inactive');
+    }
+};
+</script>
 
             </xmp>
         </div>
@@ -528,6 +580,6 @@
         
     </details>
 </div><!--HTML and CSS code for Modal ends-->
-          
+<script src="app.js"></script>          
 </body>
 </html>
