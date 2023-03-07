@@ -41,7 +41,7 @@
   }
 
   .marginhome{
-    margin-left: 300px;
+    margin-left: 500px;
   }
   
   .topnav .icon {
@@ -74,7 +74,7 @@
 
   @media  screen and (max-width: 980px) {
     .marginhome {
-      margin-left: 0;
+      margin-left: 0px;
     }
     
   }
