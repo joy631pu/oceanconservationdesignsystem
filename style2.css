@@ -126,18 +126,21 @@
 
 .cards_item {
   display: flex;
-  padding: 1rem;
+  padding: 5px;
 }
 /*--Media Query for Card element--*/
-@media (min-width: 40rem) {
+@media (min-width: 450px) {
   .cards_item {
     width: 50%;
   }
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 1000px) {
   .cards_item {
     width: 33.3333%;
+  }
+  .card_img {
+    height:200px;
   }
 }
 
@@ -148,6 +151,10 @@
   flex-direction: column;
   overflow: hidden;
 }
+
+
+
+
 
 .card_content {
   padding: 1rem;
