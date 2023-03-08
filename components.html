@@ -680,6 +680,55 @@ function slideLeft() {
   </xmp>
 </details>
 </div>
+<!--Tooltip starts-->
+<div class="cta cta1">
+  <h3>Tooltip</h3>
+</div>
+<div class="action">
+  <p>This is a 
+    <span class="tooltip">sample  
+      <span class="tooltiptext">Joy Barua</span></span>&nbsp tooltip
+  </p>
+</div><!--Tooltip ends-->
+<div class="action">
+  <details>
+    <summary>HTML and CSS code for Tooltip</summary>
+    <br>
+    <h3>HTML Code</h3>
+    <xmp>
+      <p>This is a 
+        <span class="tooltip">sample  
+          <span class="tooltiptext">Joy Barua</span></span>&nbsp tooltip
+      </p>
+    </xmp>
+    <h3>CSS Code</h3>
+    <xmp>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px solid #6dcff6;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+    </xmp>
+  </details>
+  </div>
+
 
 <script src="app.js"></script>          
 </body>
