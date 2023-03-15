@@ -270,7 +270,7 @@ footer {
 /* ######### 9b. Footer > Connect ######### */
 .social,
 .contactInfo {
-  background-color: #13b1e7;
+  background-color: #4794d0;
   color: #fff;
   padding: 1rem 1rem 0;
   text-align: center;
@@ -334,22 +334,22 @@ footer {
 }
 
 .fa-facebook {
-  background: #125788;
+  background: #4794d0;
   color: white;
 }
 
 .fa-twitter {
-  background: #125788;
+  background: #4794d0;
   color: white;
 }
 
 .fa-google {
-  background: #125788;
+  background: #4794d0;
   color: white;
 }
 
 .fa-linkedin {
-  background: #125788;
+  background: #4794d0;
   color: white;
 }
 /*--Social Media Icon Ends--*/
