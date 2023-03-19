@@ -21,7 +21,7 @@
  linkledin learning tutorial and then modified-->
  <!--The link of the tutorial is given below
    https://www.linkedin.com/learning/css-combining-grid-and-flexbox/custom-web-layouts-with-grid-and-flexbox?autoplay=true  -->
-    <section class="navWrap">
+    <div class="navWrap">
         <img src="images/Pattern.png" alt="logo" class="logo">
         <input type="checkbox" id="navToggle" class="navToggle">
         <label for="navToggle" class="navToggleLabel"><span></span></label>
@@ -35,14 +35,14 @@
                 <li><a href="home.html" class="btn">Example Site</a></li>
             </ul>
         </nav>
-    </section><!--Navigation Ends-->
+    </div><!--Navigation Ends-->
     <!--Sample Navigation for example site starts-->
     <section class="cta cta1">
         <h2>Navigation</h2>
         
     </section>
     <div class="topnav" id="myTopnav">
-        <a href="#" class="active">Home</a>
+        <a href="#" class="active marginhome">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="#">Gallery</a>
@@ -57,95 +57,108 @@
             <br><br>
             <h3>HTML Code </h3>
             <div>
-                <xmp>
-                    <div class="topnav" id="myTopnav">
-                    <a href="#" 
-                     class="active">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Gallery</a>
-                    <a href="javascript:void(0);" 
-                    class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                    </a>
-                    </div>
-                </xmp>
+                <code>
+                    &lt;div class="topnav" id="myTopnav"><br>
+                    &lt;a href="#"<br> 
+                     class="active marginhome">Home&lt;/a><br>
+                    &lt;a href="#">About&lt;/a><br>
+                    &lt;a href="#">Contact&lt;/a><br>
+                    &lt;a href="#">Gallery&lt;/a><br>
+                    &lt;a href="javascript:void(0);"<br> 
+                    class="icon" onclick="myFunction()"><br>
+                    &lt;i class="fa fa-bars">&lt;/i><br>
+                    &lt;/a><br>
+                    &lt;/div><br>
+                </code>
             </div>
+            <br>
             <h3>CSS Code</h3>
             <div>
-                <xmp>
-                    .topnav {
-                    overflow: hidden;
-                    background-color: #333;
-                    }
+                <code>
+                    .topnav {<br>
+                    overflow: hidden;<br>
+                    background-color: #333;<br>
+                    }<br>
 
-                    .topnav a {
-                    float: left;
-                    display: block;
-                    color: #f2f2f2;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    font-size: 17px;
-                    }
+                    .topnav a {<br>
+                    float: left;<br>
+                    display: block;<br>
+                    color: #f2f2f2;<br>
+                    text-align: center;<br>
+                    padding: 14px 16px;<br>
+                    text-decoration: none;<br>
+                    font-size: 17px;<br>
+                    }<br>
 
-                    .topnav a:hover {
-                    background-color: #ddd;
-                    color: black;
-                    }
+                    .topnav a:hover {<br>
+                    background-color: #ddd;<br>
+                    color: black;<br>
+                    }<br>
 
-                    .topnav a.active {
-                    background-color: #04AA6D;
-                    color: white;
-                    }
+                    .topnav a.active {<br>
+                    background-color: #04AA6D;<br>
+                    color: white;<br>
+                    }<br>
 
-                    .topnav .icon {
-                    display: none;
-                    }
+                    .marginhome{<br>
+                        margin-left: 500px;<br>
+                    }<br>
 
-                    @media screen and (max-width: 700px) {
-                    .topnav a:not(:first-child) {display: none;}
-                    .topnav a.icon {
-                    float: right;
-                    display: block;
-                    }
-                    }
+                    .topnav .icon {<br>
+                    display: none;<br>
+                    }<br>
 
-                    @media screen and (max-width: 700px) {
-                    .topnav.responsive {position: relative;}
-                    .topnav.responsive .icon {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    }
-                    .topnav.responsive a {
-                    float: none;
-                    display: block;
-                    text-align: left;
-                    }
-                    }
-                </xmp>
+                    @media screen and (max-width: 1150px) {<br>
+                    .topnav a:not(:first-child) {display: none;}<br>
+                    .topnav a.icon {<br>
+                    float: right;<br>
+                    display: block;<br>
+                    }<br>
+                    }<br>
+
+                    @media screen and (max-width: 1150px) {<br>
+                    .topnav.responsive {position: relative;}<br>
+                    .topnav.responsive .icon {<br>
+                    position: absolute;<br>
+                    right: 0;<br>
+                    top: 0;<br>
+                    }<br>
+                    .topnav.responsive a {<br>
+                    float: none;<br>
+                    display: block;<br>
+                    text-align: left;<br>
+                    }<br>
+                    }<br>
+
+                    @media  screen and (max-width: 1150px) {<br>
+                        .marginhome {<br>
+                          margin-left: 0px;<br>
+                        }<br>
+                        
+                      }<br>
+                </code>
             </div>
+            <br>
             <h3>JavaScript Code</h3>
             <div>
-                <xmp>
-                    <script>
-                        function myFunction() {
-                        var x = document.getElementById("myTopnav");
-                          if (x.className === "topnav") {
-                               x.className += " responsive";
-                          } else {
-                               x.className = "topnav";
-                          }
-                        }
-                    </script>
+                <code>
+                    &lt;script><br>
+                        function myFunction() {<br>
+                        var x = document.getElementById("myTopnav");<br>
+                          if (x.className === "topnav") {<br>
+                               x.className += " responsive";<br>
+                          } else {<br>
+                               x.className = "topnav";<br>
+                          }<br>
+                        }<br>
+                    &lt;/script>
 
-                </xmp>
+                </code>
             </div>
         </details>
     </div><!--HTML, CSS and JavaScript code for Sample Navigation for example site ends-->
 
-    </div>
+    
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
