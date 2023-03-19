@@ -65,7 +65,7 @@
  linkledin learning tutorial and then modified-->
  <!--The link of the tutorial is given below
    https://www.linkedin.com/learning/css-combining-grid-and-flexbox/custom-web-layouts-with-grid-and-flexbox?autoplay=true  -->
-    <section class="navWrap">
+    <div class="navWrap">
         <img src="images/Pattern.png" alt="logo" class="logo">
         <input type="checkbox" id="navToggle" class="navToggle">
         <label for="navToggle" class="navToggleLabel"><span></span></label>
@@ -79,7 +79,7 @@
                 <li><a href="home.html" class="btn">Example Site</a></li>
             </ul>
         </nav>
-    </section><!--Navigation ends-->
+    </div><!--Navigation ends-->
     <!--The following html code which is regarding footer was taken from a 
  linkledin learning tutorial and then modified-->
  <!--The link of the tutorial is given below
@@ -97,7 +97,7 @@
       <p class="formIntro">Connect with us via our social media account.</p>
     </section>
 
-    <section class="social">
+    <div class="social">
         <article>
           <h3>Let's be social - connect with us!</h3>
           <div class="socialIcons">
@@ -107,9 +107,9 @@
             <a href="#" class="fa fa-linkedin"></a>
            </div>
         </article>
-      </section>
+      </div>
       
-    <section class="contactInfo">
+    <div class="contactInfo">
       <article>
         <h4>Contact Information</h4>
         <ul>
@@ -119,7 +119,7 @@
         </ul>
         <p class="copy">MARINECONSERVATION &copy;2023</p>
       </article>
-    </section>
+    </div>
   </footer><!--Footer section ends-->
 <!--HTML and CSS code for footer section starts-->
   <div class="action">
@@ -128,146 +128,146 @@
       <br><br>
       <h3>HTML Code </h3>
       <div>
-          <xmp>
-            <footer>
-                <!-- Contact Form -->
-                <section class="form" id="contact">
-                  <h3>Got questions? Get in touch</h3>
-                  <p class="formIntro">Connect with us via our social media.</p>
-                </section>
+          <code>
+            &lt;footer><br>
+                &lt;section class="form" id="contact"><br>
+                  &lt;h3>Got questions? Get in touch&lt;/h3><br>
+                  &lt;p class="formIntro">Connect with us via our social media.&lt;/p><br>
+                &lt;/section><br>
             
-                <section class="social">
-                    <article>
-                      <h3>Let's be social - connect with us!</h3>
-                      <div class="socialIcons">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-google"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
-                       </div>
-                    </article>
-                  </section>
+                &lt;section class="social"><br>
+                    &lt;article><br>
+                      &lt;h3>Let's be social - connect with us!&lt;/h3><br>
+                      &lt;div class="socialIcons"><br>
+                        &lt;a href="#" class="fa fa-facebook">&lt;/a><br>
+                        &lt;a href="#" class="fa fa-twitter">&lt;/a><br>
+                        &lt;a href="#" class="fa fa-google">&lt;/a><br>
+                        &lt;a href="#" class="fa fa-linkedin">&lt;/a><br>
+                       &lt;/div><br>
+                    &lt;/article><br>
+                  &lt;/section><br>
                   
-                <section class="contactInfo">
-                  <article>
-                    <h4>Contact Information</h4>
-                    <ul>
-                      <li>Phone: 123-456-7890</li>
-                      <li>Email: info@marineconservation.com</li>
-                      <li>Address: 1234 Ocean Ave. Courtenay, BC</li>
-                    </ul>
-                    <p class="copy">MARINECONSERVATION &copy;2023</p>
-                  </article>
-                </section>
-              </footer>
+                &lt;section class="contactInfo"><br>
+                  &lt;article><br>
+                    &lt;h4>Contact Information&lt;/h4><br>
+                    &lt;ul><br>
+                      &lt;li>Phone: 123-456-7890&lt;/li><br>
+                      &lt;li>Email: info@marineconservation.com&lt;/li><br>
+                      &lt;li>Address: 1234 Ocean Ave. Courtenay, BC&lt;/li><br>
+                    &lt;/ul><br>
+                    &lt;p class="copy">MARINECONSERVATION &copy;2023&lt;/p><br>
+                  &lt;/article><br>
+                &lt;/section><br>
+              &lt;/footer><br>
         
-          </xmp>
+          </code>
       </div>
+      <br>
       <h3>CSS Code</h3>
       <div>
-          <xmp>
-            footer {
-                margin-top: 1rem;
-              }
+          <code>
+            footer {<br>
+                margin-top: 1rem;<br>
+              }<br>
               
               
-              .form {
-                background-color: #223055;
-                color: #fff;
-                padding: 1rem 1rem 2rem;
-              }
-              .form p {
-                font-weight: 300;
-                padding-bottom: 1rem;
-              }
+              .form {<br>
+                background-color: #223055;<br>
+                color: #fff;<br>
+                padding: 1rem 1rem 2rem;<br>
+              }<br>
+              .form p {<br>
+                font-weight: 300;<br>
+                padding-bottom: 1rem;<br>
+              }<br>
               
               
-              .social,
-              .contactInfo {
-                background-color: #13b1e7;
-                color: #fff;
-                padding: 1rem 1rem 0;
-                text-align: center;
-              }
+              .social,<br>
+              .contactInfo {<br>
+                background-color: #13b1e7;<br>
+                color: #fff;<br>
+                padding: 1rem 1rem 0;<br>
+                text-align: center;<br>
+              }<br>
               
-              .social h3 {
-                border-bottom: solid 1px #b6e8ff;
-                font-weight: 400;
-                padding-bottom: 0.25rem;
-              }
+              .social h3 {<br>
+                border-bottom: solid 1px #b6e8ff;<br>
+                font-weight: 400;<br>
+                padding-bottom: 0.25rem;<br>
+              }<br>
               
-              .socialIcons {
-                font-size: 200%;
-                padding: 1rem 0;
-              }
+              .socialIcons {<br>
+                font-size: 200%;<br>
+                padding: 1rem 0;<br>
+              }<br>
               
-              .socialIcons a {
-                color: #223055;
-                padding: 0 0.5rem;
-              }
+              .socialIcons a {<br>
+                color: #223055;<br>
+                padding: 0 0.5rem;<br>
+              }<br>
               
-              .socialIcons a:hover {
-                color: #ffc107;
-              }
+              .socialIcons a:hover {<br>
+                color: #ffc107;<br>
+              }<br>
               
-              .contactInfo {
-                padding-top: 0;
-              }
+              .contactInfo {<br>
+                padding-top: 0;<br>
+              }<br>
               
-              .contactInfo article {
-                border-top: solid 1px #b6e8ff;
-                padding: 1rem 0;
-              }
+              .contactInfo article {<br>
+                border-top: solid 1px #b6e8ff;<br>
+                padding: 1rem 0;<br>
+              }<br>
               
-              .contactInfo h4 {
-                font-weight: 400;
-              }
+              .contactInfo h4 {<br>
+                font-weight: 400;<br>
+              }<br>
               
-              .contactInfo li {
-                font-weight: 300;
-                list-style-type: none;
-              }
+              .contactInfo li {<br>
+                font-weight: 300;<br>
+                list-style-type: none;<br>
+              }<br>
               
-              .copy {
-                font-size: 70%;
-                font-weight: 300;
-                padding-top: 1rem;
-              }
+              .copy {<br>
+                font-size: 70%;<br>
+                font-weight: 300;<br>
+                padding-top: 1rem;<br>
+              }<br>
               
               
-              .fa {
-                padding: 20px;
-                font-size: 30px;
-                width: 50px;
-                text-align: center;
-                text-decoration: none;
-                margin: 5px 2px;
-              }
+              .fa {<br>
+                padding: 20px;<br>
+                font-size: 30px;<br>
+                width: 50px;<br>
+                text-align: center;<br>
+                text-decoration: none;<br>
+                margin: 5px 2px;<br>
+              }<br>
               
-              .fa:hover {
-                  opacity: 0.7;
-              }
+              .fa:hover {<br>
+                  opacity: 0.7;<br>
+              }<br>
               
-              .fa-facebook {
-                background: #3B5998;
-                color: white;
-              }
+              .fa-facebook {<br>
+                background: #3B5998;<br>
+                color: white;<br>
+              }<br>
               
-              .fa-twitter {
-                background: #55ACEE;
-                color: white;
-              }
+              .fa-twitter {<br>
+                background: #55ACEE;<br>
+                color: white;<br>
+              }<br>
               
-              .fa-google {
-                background: #dd4b39;
-                color: white;
-              }
+              .fa-google {<br>
+                background: #dd4b39;<br>
+                color: white;<br>
+              }<br>
               
-              .fa-linkedin {
-                background: #007bb5;
-                color: white;
-              }
-          </xmp>
+              .fa-linkedin {<br>
+                background: #007bb5;<br>
+                color: white;<br>
+              }<br>
+          </code>
       </div>
   </details>
   </div>
@@ -275,73 +275,76 @@
   <section class="cta cta1">
     <h2>Email SignUp</h2>
   </section>
-  <section class="action">
+  <div class="action">
     <form class="form-inline">
       <label for="email">Email:</label>
       <input type="email" id="email" placeholder="Enter email" name="email">
       <button class="buttonemail" type="submit">Submit</button>
     </form>
-  </section>
+  </div>
   <div class="action">
     <details>
       <summary> HTML and CSS code  (Email SignUp)</summary>
       <br><br>
       <h3>HTML Code </h3>
       <div>
-          <xmp>
-            <form class="form-inline">
-              <label for="email">Email:</label>
-              <input type="email" id="email" placeholder="Enter email" name="email">
-              <button class="button" type="submit">Submit</button>
-            </form>  
-          </xmp>
+          <code>
+            &lt;form class="form-inline"><br>
+              &lt;label for&lt;"email">Email:&lt;/label><br>
+              &lt;input type="email" id="email"<br>
+              placeholder="Enter email" name="email"><br>
+              &lt;button class="button" type="submit">Submit<br>
+              &lt;/button><br>
+            &lt;/form><br>  
+          </code>
       </div>
+      <br>
       <h3>CSS Code</h3>
       <div>
-          <xmp>
-            .form-inline {  
-              display: flex;
-              flex-flow: row wrap;
-              align-items: center;
-            }
+          <code>
+            .form-inline {<br>  
+              display: flex;<br>
+              flex-flow: row wrap;<br>
+              align-items: center;<br>
+            }<br>
             
-            .form-inline label {
-              margin: 5px 10px 5px 0;
-            }
+            .form-inline label {<br>
+              margin: 5px 10px 5px 0;<br>
+            }<br>
             
-            .form-inline input {
-              vertical-align: middle;
-              margin: 5px 10px 5px 0;
-              padding: 10px;
-              background-color: #fff;
-              border: 1px solid #ddd;
-            }
+            .form-inline input {<br>
+              vertical-align: middle;<br>
+              margin: 5px 10px 5px 0;<br>
+              padding: 10px;<br>
+              background-color: #fff;<br>
+              border: 1px solid #ddd;<br>
+            }<br>
             
-            .button {
-                background-color: #6dcff6; /* Soft Blue */
-                border: none;
-                border-radius: 28px;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-              }
+            .button {<br>
+                background-color: #6dcff6;<br>
+                border: none;<br>
+                border-radius: 28px;<br>
+                color: white;<br>
+                padding: 15px 32px;<br>
+                text-align: center;<br>
+                text-decoration: none;<br>
+                display: inline-block;<br>
+                font-size: 16px;<br>
+                margin: 4px 2px;<br>
+                cursor: pointer;<br>
+              }<br>
             
-            @media (max-width: 700px) {
-              .form-inline input {
-                margin: 10px 0;
-              }
+            @media (max-width: 700px) {<br>
+              .form-inline input {<br>
+                margin: 10px 0;<br>
+              }<br>
               
-              .form-inline {
-                flex-direction: column;
-                align-items: stretch;
-              }
-            }
-          </xmp>
+              .form-inline {<br>
+                flex-direction: column;<br>
+                align-items: stretch;<br>
+              }<br>
+            }<br>
+          </code>
       </div>
   </details>
     </div> 

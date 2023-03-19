@@ -16,7 +16,7 @@
  linkledin learning tutorial and then modified-->
  <!--The link of the tutorial is given below
    https://www.linkedin.com/learning/css-combining-grid-and-flexbox/custom-web-layouts-with-grid-and-flexbox?autoplay=true  -->
-    <section class="navWrap">
+    <div class="navWrap">
         <img src="images/Pattern.png" alt="logo" class="logo">
         <input type="checkbox" id="navToggle" class="navToggle">
         <label for="navToggle" class="navToggleLabel"><span></span></label>
@@ -30,7 +30,7 @@
             <li><a href="home.html" class="btn">Example Site</a></li>
           </ul>
         </nav>
-    </section><!--Navigation Ends-->
+    </div><!--Navigation Ends-->
     <!--Button section starts-->
     <section class="cta cta1">
         <h2>Button</h2>
@@ -48,31 +48,33 @@
           <br><br>
           <h3>HTML Code </h3>
           <div>
-              <xmp>
-                <button class="button">Submit</button>
-                <button class="button button2">Register</button>
+              <code>
+                &lt;button class="button">Submit&lt;/button><br>
+                &lt;button class="button button2">Register<br>
+                &lt;/button><br>
             
-              </xmp>
+              </code>
           </div>
+          <br>
           <h3>CSS Code</h3>
           <div>
-              <xmp>
-                .button {
-                    background-color: #6dcff6;
-                    border: none;
-                    border-radius: 28px;
-                    color: white;
-                    padding: 15px 32px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 16px;
-                    margin: 4px 2px;
-                    cursor: pointer;
-                  }
+              <code>
+                .button {<br>
+                    background-color: #6dcff6;<br>
+                    border: none;<br>
+                    border-radius: 28px;<br>
+                    color: white;<br>
+                    padding: 15px 32px;<br>
+                    text-align: center;<br>
+                    text-decoration: none;<br>
+                    display: inline-block;<br>
+                    font-size: 16px;<br>
+                    margin: 4px 2px;<br>
+                    cursor: pointer;<br>
+                  }<br>
                   
-                  .button2 {background-color: #4794d0;}
-              </xmp>
+                  .button2 {background-color: #4794d0;}<br>
+              </code>
           </div>
       </details>
         </div><!--HTML and CSS code for buttons ends-->
@@ -124,102 +126,102 @@
                 <br><br>
                 <h3>HTML Code </h3>
                 <div>
-                    <xmp>
-                        <li class="cards_item">
-                            <div class="card">
-                              <div class="card_image"><img src="https://picsum.photos/500/300/?image=11" alt="Sample image"></div>
-                              <div class="card_content">
-                                <h2 class="card_title">Card Grid Layout</h2>
-                                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                                <button class="btn card_btn">Read More</button>
-                              </div>
-                            </div>
-                        </li>
-                    </xmp>
+                    <code>
+                        &lt;li class="cards_item"><br>
+                            &lt;div class="card"><br>
+                              &lt;div class="card_image"><br>
+                              &lt;img src="https://picsum.photos/500/300/?image=11"<br>
+                              alt="Sample image">&lt;/div><br>
+                              &lt;div class="card_content"><br>
+                                &lt;h2 class="card_title">Card Grid Layout&lt;/h2><br>
+                                &lt;p class="card_text">Lorem Ipsum<br>
+                                &lt;/p><br>
+                                &lt;button class="btn card_btn">Read More<br>
+                                &lt;/button><br>
+                              &lt;/div><br>
+                            &lt;/div><br>
+                        &lt;/li><br>
+                    </code>
                 </div>
+                <br>
                 <h3>CSS Code</h3>
                 <div>
-                    <xmp>
-                        .btn {
-                            color: #ffffff;
-                            padding: 0.8rem;
-                            font-size: 14px;
-                            text-transform: uppercase;
-                            border-radius: 4px;
-                            font-weight: 400;
-                            display: block;
-                            width: 100%;
-                            cursor: pointer;
-                            border: 1px solid rgba(255, 255, 255, 0.2);
-                            background: transparent;
-                          }
+                    <code>
+                        .btn {<br>
+                            color: #ffffff;<br>
+                            padding: 0.8rem;<br>
+                            font-size: 14px;<br>
+                            text-transform: uppercase;<br>
+                            border-radius: 4px;<br>
+                            font-weight: 400;<br>
+                            display: block;<br>
+                            width: 100%;<br>
+                            cursor: pointer;<br>
+                            border: 1px solid rgba(255, 255, 255, 0.2);<br>
+                            background: transparent;<br>
+                          }<br>
                           
-                          .btn:hover {
-                            background-color: rgba(255, 255, 255, 0.12);
-                          }
+                          .btn:hover {<br>
+                            background-color: rgba(255, 255, 255, 0.12);<br>
+                          }<br>
                           
-                          .cards {
-                            display: flex;
-                            flex-wrap: wrap;
-                            list-style: none;
-                            margin: 0;
-                            padding: 0;
-                          }
+                          .cards {<br>
+                            display: flex;<br>
+                            flex-wrap: wrap;<br>
+                            list-style: none;<br>
+                            margin: 0;<br>
+                            padding: 0;<br>
+                          }<br>
                           
-                          .cards_item {
-                            display: flex;
-                            padding: 1rem;
-                          }
+                          .cards_item {<br>
+                            display: flex;<br>
+                            padding: 1rem;<br>
+                          }<br>
                           
-                          @media (min-width: 40rem) {
-                            .cards_item {
-                              width: 50%;
-                            }
-                          }
+                          @media (min-width: 40rem) {<br>
+                            .cards_item {<br>
+                              width: 50%;<br>
+                            }<br>
+                          }<br>
                           
-                          @media (min-width: 56rem) {
-                            .cards_item {
-                              width: 33.3333%;
-                            }
-                          }
+                          @media (min-width: 56rem) {<br>
+                            .cards_item {<br>
+                              width: 33.3333%;<br>
+                            }<br>
+                          }<br>
                           
-                          .card {
-                            background-color: white;
-                            border-radius: 0.25rem;
-                            box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-                            display: flex;
-                            flex-direction: column;
-                            overflow: hidden;
-                          }
+                          .card {<br>
+                            background-color: white;<br>
+                            border-radius: 0.25rem;<br>
+                            box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);<br>
+                            display: flex;<br>
+                            flex-direction: column;<br>
+                            overflow: hidden;<br>
+                          }<br>
                           
-                          .card_content {
-                            padding: 1rem;
-                            background: linear-gradient(to bottom left, #4794d0 40%, #125788 100%);
-                          }
+                          .card_content {<br>
+                            padding: 1rem;<br>
+                            background: linear-gradient(to bottom left, #4794d0 40%, #125788 100%);<br>
+                          }<br>
                           
-                          .card_title {
-                            color: #ffffff;
-                            font-size: 1.1rem;
-                            font-weight: 700;
-                            letter-spacing: 1px;
-                            text-transform: capitalize;
-                            margin: 0px;
-                          }
+                          .card_title {<br>
+                            color: #ffffff;<br>
+                            font-size: 1.1rem;<br>
+                            font-weight: 700;<br>
+                            letter-spacing: 1px;<br>
+                            text-transform: capitalize;<br>
+                            margin: 0px;<br>
+                          }<br>
                           
-                          .card_text {
-                            color: #ffffff;
-                            font-size: 0.875rem;
-                            line-height: 1.5;
-                            margin-bottom: 1.25rem;    
-                            font-weight: 400;
-                          }
-                          .made_by{
-                            font-weight: 400;
-                            font-size: 13px;
-                            margin-top: 35px;
-                            text-align: center;
-                          }
-                    </xmp>
+                          .card_text {<br>
+                            color: #ffffff;<br>
+                            font-size: 0.875rem;<br>
+                            line-height: 1.5;<br>
+                            margin-bottom: 1.25rem;<br>    
+                            font-weight: 400;<br>
+                          }<br>
+                                                  
+                    </code>
                 </div>
             </details>
         </div><!--HTML and CSS Code for Cards ends-->
@@ -234,24 +236,24 @@
  <!--The following HTML code which is regarding carousels/sliders was taken from codepen.io site and then modified
  the link of the copied code is as follows: https://codepen.io/hershkirsh/pen/BXBprB  -->
 
-   <section>
+   <div>
     <div id="container">
       <div id="slider-container">
         <span onclick="slideRight()" class="btn"></span>
           <div id="slider">
-            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" alt="Sample Image" style="height: 200px;"></a></span></div>
-            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" alt="Sample Image" style="height: 200px;"></a><span></div>
-            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" alt="Sample Image" style="height: 200px;"></a></span></div> 
-            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" alt="Sample Image" style="height: 200px;"></a></span></div>
-            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" alt="Sample Image" style="height: 200px;"></a><span></div>
-            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" alt="Sample Image" style="height: 200px;"></a></span></div>          
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" alt="Sample Image" style="height: 200px;"></span></div>
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" alt="Sample Image" style="height: 200px;"></span></div>
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" alt="Sample Image" style="height: 200px;"></span></div> 
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" alt="Sample Image" style="height: 200px;"></span></div>
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" alt="Sample Image" style="height: 200px;"></span></div>
+            <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" alt="Sample Image" style="height: 200px;"></span></div>          
             
             
         </div>
         <span onclick="slideLeft()" class="btn"></span>
       </div>
     </div>
-  </section><!--Carousel sections ends-->
+  </div><!--Carousel sections ends-->
 
 <!--HTML, CSS and JavaScript code for Carousels starts-->
 <div class="action">
@@ -260,221 +262,237 @@
         <br><br>
         <h3>HTML Code </h3>
         <div>
-            <xmp>
-              <section>
-                <div id="container">
-                  <div id="slider-container">
-                    <span onclick="slideRight()" class="btn"></span>
-                      <div id="slider">
-                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" 
-                          alt="Sample Image" style="height: 200px;"></a></span></div>
-                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" 
-                          alt="Sample Image" style="height: 200px;"></a><span></div>
-                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" 
-                          alt="Sample Image" style="height: 200px;"></a></span></div> 
-                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=11" 
-                          alt="Sample Image" style="height: 200px;"></a></span></div>
-                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=10" 
-                          alt="Sample Image" style="height: 200px;"></a><span></div>
-                        <div class="slide"><span><img src="https://picsum.photos/500/300/?image=5" 
-                          alt="Sample Image" style="height: 200px;"></a></span></div>          
+            <code>
+              &lt;section><br>
+                &lt;div id="container"><br>
+                  &lt;div id="slider-container"><br>
+                    &lt;span onclick="slideRight()" class="btn"><br>
+                    &lt;/span><br>
+                      &lt;div id="slider"><br>
+                        &lt;div class="slide">&lt;span><br>
+                        &lt;img src="https://picsum.photos/500/300/?image=11"<br>
+                          alt="Sample Image" style="height: 200px;">&lt;/a><br>
+                          &lt;/span>&lt;/div><br>
+                        &lt;div class="slide">&lt;span><br>
+                        &lt;img src="https://picsum.photos/500/300/?image=10"<br> 
+                          alt="Sample Image" style="height: 200px;">&lt;/a><br>
+                          &lt;/span>&lt;div><br>
+                        &lt;div class="slide">&lt;span><br>
+                        &lt;img src="https://picsum.photos/500/300/?image=5"<br> 
+                          alt="Sample Image" style="height: 200px;">&lt;/a><br>
+                          &lt;/span>&lt;/div><br> 
+                        &lt;div class="slide">&lt;span><br>
+                        &lt;img src="https://picsum.photos/500/300/?image=11"<br> 
+                          alt="Sample Image" style="height: 200px;">&lt;/a><br>
+                          &lt;/span>&lt;/div><br>
+                      &lt;div class="slide">&lt;span><br>
+                      &lt;img src="https://picsum.photos/500/300/?image=10"<br> 
+                          alt="Sample Image" style="height: 200px;">&lt;/a><br>
+                          &lt;span>&lt;div><br>
+                        &lt;div class="slide">&lt;span><br>
+                        &lt;img src="https://picsum.photos/500/300/?image=5"<br> 
+                          alt="Sample Image" style="height: 200px;">&lt;/a><br>
+                          &lt;/span>&lt;/div><br>          
                         
                         
-                    </div>
-                    <span onclick="slideLeft()" class="btn"></span>
-                  </div>
-                </div>
-              </section>
-            </xmp>
+                    &lt;/div><br>
+                    &lt;span onclick="slideLeft()" class="btn">&lt;/span><br>
+                  &lt;/div><br>
+                &lt;/div><br>
+              &lt;/section><br>
+            </code>
         </div>
+        <br>
         <h3>CSS Code</h3>
         <div>
-            <xmp>
-              #slider-container {
-                height: 300px;
-                position: relative;
-                overflow: hidden;
-                padding: 20px;
-              }
+            <code>
+              #slider-container {<br>
+                height: 300px;<br>
+                position: relative;<br>
+                overflow: hidden;<br>
+                padding: 20px;<br>
+              }<br>
               
-              #slider-container .btn {
-                position: absolute;
-                top: calc(50% - 30px);
-                height: 30px;
-                width: 30px;
-                border-left: 8px solid black;
-                border-top: 8px solid black;
-              }
+              #slider-container .btn {<br>
+                position: absolute;<br>
+                top: calc(50% - 30px);<br>
+                height: 30px;<br>
+                width: 30px;<br>
+                border-left: 8px solid black;<br>
+                border-top: 8px solid black;<br>
+              }<br>
               
-              #slider-container .btn:hover {
-                transform: scale(1.2);
-              }
+              #slider-container .btn:hover {<br>
+                transform: scale(1.2);<br>
+              }<br>
               
-              #slider-container .btn.inactive {
-                border-color: rgb(153, 121, 126)
-              }
+              #slider-container .btn.inactive {<br>
+                border-color: rgb(153, 121, 126)<br>
+              }<br>
               
-              #slider-container .btn:first-of-type {
-                transform: rotate(-45deg);
-                left: 10px
-              }
+              #slider-container .btn:first-of-type {<br>
+                transform: rotate(-45deg);<br>
+                left: 10px<br>
+              }<br>
               
-              #slider-container .btn:last-of-type {
-                transform: rotate(135deg);
-                right: 10px;
-              }
+              #slider-container .btn:last-of-type {<br>
+                transform: rotate(135deg);<br>
+                right: 10px;<br>
+              }<br>
               
-              #slider-container #slider {
-                display: flex;
-                width: 1000%;
-                height: 100%; 
-                transition: all .5s;
-              }
+              #slider-container #slider {<br>
+                display: flex;<br>
+                width: 1000%;<br>
+                height: 100%;<br> 
+                transition: all .5s;<br>
+              }<br>
               
-              #slider-container #slider .slide {
-                height: 90%;
-                margin: auto 10px;
-                display: grid;
-                place-items: center;
-              }
+              #slider-container #slider .slide {<br>
+                height: 90%;<br>
+                margin: auto 10px;<br>
+                display: grid;<br>
+                place-items: center;<br>
+              }<br>
               
-              #slider-container #slider .slide span {
-                color: white;
-                font-size: 150px;
-              }
+              #slider-container #slider .slide span {<br>
+                color: white;<br>
+                font-size: 150px;<br>
+              }<br>
               
-              @media only screen and (min-width: 1100px) {
+              @media only screen and (min-width: 1100px) {<br>
               
-                #slider-container #slider .slide {
-                  width: calc(2.5% - 20px);
-                }
+                #slider-container #slider .slide {<br>
+                  width: calc(2.5% - 20px);<br>
+                }<br>
               
-              }
+              }<br>
               
-              @media only screen and (max-width: 1100px) {
+              @media only screen and (max-width: 1100px){<br>
               
-                #slider-container #slider .slide {
-                  width: calc(3.3333333% - 20px);
-                }
+                #slider-container #slider .slide {<br>
+                  width: calc(3.3333333% - 20px);<br>
+                }<br>
               
-              }
+              }<br>
               
-              @media only screen and (max-width: 900px) {
+              @media only screen and (max-width: 900px) {<br>
               
-                #slider-container #slider .slide {
-                  width: calc(5% - 20px);
-                }
+                #slider-container #slider .slide {<br>
+                  width: calc(5% - 20px);<br>
+                }<br>
               
-              }
+              }<br>
               
-              @media only screen and (max-width: 480px) {
+              @media only screen and (max-width: 480px) {<br>
               
-                #slider-container #slider .slide {
-                  width: calc(10% - 20px);
-                }
+                #slider-container #slider .slide {<br>
+                  width: calc(10% - 20px);<br>
+                }<br>
               
-              }
-            </xmp>
+              }<br>
+            </code>
         </div>
         <div>
+          <br>
             <h3>JavaScript Code</h3>
-            <xmp>
-<script>
-var container = document.getElementById('container')
-var slider = document.getElementById('slider');
-var slides = document.getElementsByClassName('slide').length;
-var buttons = document.getElementsByClassName('btn');
+            <code>
+            <br>
+&lt;script><br>
+var container = document.getElementById('container');<br>
+var slider = document.getElementById('slider');<br>
+var slides = document.getElementsByClassName('slide')<br>.length;<br>
+var buttons = document.getElementsByClassName('btn');<br>
 
 
-var currentPosition = 0;
-var currentMargin = 0;
-var slidesPerPage = 0;
-var slidesCount = slides - slidesPerPage;
-var containerWidth = container.offsetWidth;
-var prevKeyActive = false;
-var nextKeyActive = true;
+var currentPosition = 0;<br>
+var currentMargin = 0;<br>
+var slidesPerPage = 0;<br>
+var slidesCount = slides - slidesPerPage;<br>
+var containerWidth = container.offsetWidth;<br>
+var prevKeyActive = false;<br>
+var nextKeyActive = true;<br>
 
-window.addEventListener("resize", checkWidth);
+window.addEventListener("resize", checkWidth);<br>
 
-function checkWidth() {
-    containerWidth = container.offsetWidth;
-    setParams(containerWidth);
-}
+function checkWidth() {<br>
+    containerWidth = container.offsetWidth;<br>
+    setParams(containerWidth);<br>
+};<br>
 
-function setParams(w) {
-    if (w < 551) {
-        slidesPerPage = 1;
-    } else {
-        if (w < 901) {
-            slidesPerPage = 2;
-        } else {
-            if (w < 1101) {
-                slidesPerPage = 3;
-            } else {
-                slidesPerPage = 4;
-            }
-        }
-    }
-    slidesCount = slides - slidesPerPage;
-    if (currentPosition > slidesCount) {
-        currentPosition -= slidesPerPage;
-    };
-    currentMargin = - currentPosition * (100 / slidesPerPage);
-    slider.style.marginLeft = currentMargin + '%';
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
-    if (currentPosition >= slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
-}
+function setParams(w) {<br>
+    if (w &lt; 551) {<br>
+        slidesPerPage = 1;<br>
+    } else {<br>
+        if (w &lt; 901) {<br>
+            slidesPerPage = 2;<br>
+        } else {<br>
+            if (w &lt; 1101) {<br>
+                slidesPerPage = 3;<br>
+            } else {<br>
+                slidesPerPage = 4;<br>
+            }<br>
+        }<br>
+    }<br>
+    slidesCount = slides - slidesPerPage;<br>
+    if (currentPosition > slidesCount) {<br>
+        currentPosition -= slidesPerPage;<br>
+    };<br>
+    currentMargin = - currentPosition * <br>(100 / slidesPerPage);<br>
+    slider.style.marginLeft = currentMargin + '%';<br>
+    if (currentPosition > 0) {<br>
+        buttons[0].classList.remove('inactive');<br>
+    }<br>
+    if (currentPosition &lt; slidesCount) {<br>
+        buttons[1].classList.remove('inactive');<br>
+    }<br>
+    if (currentPosition >= slidesCount) {<br>
+        buttons[1].classList.add('inactive');<br>
+    }<br>
+};<br>
 
-setParams();
+setParams();<br>
 
-function slideRight() {
-    if (currentPosition != 0) {
-        slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
-        currentMargin += (100 / slidesPerPage);
-        currentPosition--;
-    };
-    if (currentPosition === 0) {
-        buttons[0].classList.add('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
-};
+function slideRight() {<br>
+    if (currentPosition != 0) {<br>
+        slider.style.marginLeft = currentMargin + <br>(100 / slidesPerPage) + '%';<br>
+        currentMargin += (100 / slidesPerPage);<br>
+        currentPosition--;<br>
+    };<br>
+    if (currentPosition === 0) {<br>
+        buttons[0].classList.add('inactive');<br>
+    }<br>
+    if (currentPosition &lt; slidesCount) {<br>
+        buttons[1].classList.remove('inactive');<br>
+    }<br>
+};<br>
 
-function slideLeft() {
-    if (currentPosition != slidesCount) {
-        slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
-        currentMargin -= (100 / slidesPerPage);
-        currentPosition++;
-    };
-    if (currentPosition == slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
-};
-</script>
+function slideLeft() {<br>
+    if (currentPosition != slidesCount) {<br>
+        slider.style.marginLeft = currentMargin - <br>(100 / slidesPerPage) + '%';<br>
+        currentMargin -= (100 / slidesPerPage);<br>
+        currentPosition++;<br>
+    };<br>
+    if (currentPosition == slidesCount) {<br>
+        buttons[1].classList.add('inactive');<br>
+    }<br>
+    if (currentPosition > 0) {<br>
+        buttons[0].classList.remove('inactive');<br>
+    }<br>
+};<br>
+&lt;/script><br>
 
-            </xmp>
+            </code>
         </div>
     </details>
 </div><!--HTML, CSS and JavaScript code for Carousels ends-->
 <!--Modal section starts-->
 <section class="cta cta1">
     <h2>Modal</h2>
-    <p></p>
+    
 </section>
 
 <div class="wrapper">
-    <a class="button" href="#popup1" >Marine Conservation</a></p>
+    <a class="button" href="#popup1" >Marine Conservation</a>
     <div id="popup1" class="overlay">
         <div class="popup">
           <h2>Steps</h2>
@@ -498,83 +516,85 @@ function slideLeft() {
         <br><br>
         <h3>HTML Code </h3>
         <div>
-            <xmp>
-            <a class="button" href="#popup1" >Marine Conservation</a></p>
-            <div id="popup1" class="overlay">
-            <div class="popup">
-            <h2>Steps</h2>
-            <br>
-             <a class="close" href="#">&times;</a>
-             <div class="content">
-            <ul>
-            <li>Stop using plastics.</li>
-            <li>Avoid overfishing.</li>
-            <li>Protect our coral reef.</li>
-            <li>Don't throw waste at any water source.</li>
-            </ul>
-            </div>
-            </div>
-            </div>
-            </xmp>
+            <code>
+            &lt;a class="button" href="#popup1" >Marine Conservation<br>
+            &lt;/a><br>
+            &lt;div id="popup1" class="overlay"><br>
+            &lt;div class="popup"><br>
+            &lt;h2>Steps&lt;/h2><br>
+            &lt;br><br>
+            &lt;a class="close" href="#">&#38;times;&lt;/a><br>
+             &lt;div class="content"><br>
+            &lt;ul><br>
+            &lt;li>Stop using plastics.&lt;/li><br>
+            &lt;li>Avoid overfishing.&lt;/li><br>
+            &lt;li>Protect our coral reef.&lt;/li><br>
+            &lt;li>Don't throw waste at any water source.&lt;/li><br>
+            &lt;/ul><br>
+            &lt;/div><br>
+            &lt;/div><br>
+            &lt;/div><br>
+            </code>
         </div>
+        <br>
         <h3>CSS Code</h3>
         <div>
-            <xmp>
-                .overlay {
-                    position: fixed;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    background: rgba(0, 0, 0, 0.7);
-                    transition: opacity 500ms;
-                    visibility: hidden;
-                    opacity: 0;
-                  }
-                  .overlay:target {
-                    visibility: visible;
-                    opacity: 1;
-                  }
+            <code>
+                .overlay {<br>
+                    position: fixed;<br>
+                    top: 0;<br>
+                    bottom: 0;<br>
+                    left: 0;<br>
+                    right: 0;<br>
+                    background: rgba(0, 0, 0, 0.7);<br>
+                    transition: opacity 500ms;<br>
+                    visibility: hidden;<br>
+                    opacity: 0;<br>
+                  }<br>
+                  .overlay:target {<br>
+                    visibility: visible;<br>
+                    opacity: 1;<br>
+                  }<br>
                   
-                  .popup {
-                    margin: 70px auto;
-                    padding: 20px;
-                    background: #fff;
-                    border-radius: 5px;
-                    width: 30%;
-                    position: relative;
-                    transition: all 5s ease-in-out;
-                  }
-                  .popup h2 {
-                    margin-top: 0;
-                    color: #333;
-                    font-family: Tahoma, Arial, sans-serif;
-                  }
+                  .popup {<br>
+                    margin: 70px auto;<br>
+                    padding: 20px;<br>
+                    background: #fff;<br>
+                    border-radius: 5px;<br>
+                    width: 30%;<br>
+                    position: relative;<br>
+                    transition: all 5s ease-in-out;<br>
+                  }<br>
+                  .popup h2 {<br>
+                    margin-top: 0;<br>
+                    color: #333;<br>
+                    font-family: Tahoma, Arial, sans-serif;<br>
+                  }<br>
                   
-                  .popup .close {
-                    position: absolute;
-                    top: 20px;
-                    right: 30px;
-                    transition: all 200ms;
-                    font-size: 30px;
-                    font-weight: bold;
-                    text-decoration: none;
-                    color: #333;
-                  }
-                  .popup .close:hover {
-                    color: #06D85F;
-                  }
-                  .popup .content {
-                    max-height: 30%;
-                    overflow: auto;
-                  }
+                  .popup .close {<br>
+                    position: absolute;<br>
+                    top: 20px;<br>
+                    right: 30px;<br>
+                    transition: all 200ms;<br>
+                    font-size: 30px;<br>
+                    font-weight: bold;<br>
+                    text-decoration: none;<br>
+                    color: #333;<br>
+                  }<br>
+                  .popup .close:hover {<br>
+                    color: #06D85F;<br>
+                  }<br>
+                  .popup .content {<br>
+                    max-height: 30%;<br>
+                    overflow: auto;<br>
+                  }<br>
 
-                  @media screen and (max-width:749px){
-                    .popup{
-                      width: 70%;
-                    }
-                  }
-            </xmp>
+                  @media screen and (max-width:749px){<br>
+                    .popup{<br>
+                      width: 70%;<br>
+                    }<br>
+                  }<br>
+            </code>
         </div>
         
     </details>
@@ -597,39 +617,43 @@ function slideLeft() {
       <br><br>
       <h3>HTML Code </h3>
       <div>
-          <xmp>
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"> <a href="#"> Home </a></li>
-              <li class="breadcrumb-item"> <a href="#"> Products </a></li>
-              <li class="breadcrumb-item"> <a href="#"> Reviews  </a></li>
-            </ol>
-          </xmp>
+          <code>
+            &lt;ol class="breadcrumb"><br>
+              &lt;li class="breadcrumb-item"><br> 
+              &lt;a href="#"> Home &lt;/a>&lt;/li><br>
+              &lt;li class="breadcrumb-item"><br> 
+              &lt;a href="#"> Products &lt;/a>&lt;/li><br>
+              &lt;li class="breadcrumb-item"><br> 
+              &lt;a href="#"> Reviews &lt;/a>&lt;/li><br>
+            &lt;/ol><br>
+          </code>
       </div>
+      <br>
       <h3>CSS Code</h3>
       <div>
-          <xmp>
-            .breadcrumb{
-              padding: 10px 16px;
-              list-style: none;
-              background-color: #6dcff6;
-              }
+          <code>
+            .breadcrumb{<br>
+              padding: 10px 16px;<br>
+              list-style: none;<br>
+              background-color: #6dcff6;<br>
+              }<br>
               
-            .breadcrumb-item{
-              display: inline;
-              font-size: 18px;
-              }
+            .breadcrumb-item{<br>
+              display: inline;<br>
+              font-size: 18px;<br>
+              }<br>
             
-            .breadcrumb li+li:before{
-              padding: 8px;
-              color: black;
-              content: ">>";
-            }
+            .breadcrumb li+li:before{<br>
+              padding: 8px;<br>
+              color: black;<br>
+              content: ">>";<br>
+            }<br>
             
-            .breadcrumb-item a{
-              color: #004080;
-              text-decoration: none;
-            }
-          </xmp>
+            .breadcrumb-item a{<br>
+              color: #004080;<br>
+              text-decoration: none;<br>
+            }<br>
+          </code>
       </div>
   </details>
 </div><!--HTML and CSS Code for Breadcrumb ends-->
@@ -661,23 +685,23 @@ function slideLeft() {
   <summary>HTML code for Lists</summary>
   <br>
   <h3>Unordered List</h3>
-  <xmp>
-  <ul>
-    <li>Stop using plastics.</li>
-    <li>Avoid overfishing.</li>
-    <li>Protect our coral reef.</li>
-    <li>Don't throw waste at any water source.</li>
-  </ul>
-  </xmp>
+  <code>
+  &lt;ul><br>
+    &lt;li>Stop using plastics.&lt;/li><br>
+    &lt;li>Avoid overfishing.&lt;/li><br>
+    &lt;li>Protect our coral reef.&lt;/li><br>
+    &lt;li>Don't throw waste at any water source.&lt;/li><br>
+  &lt;/ul><br>
+  </code>
   <h3>Ordered List</h3>
-  <xmp>
-  <ol>
-    <li>Stop using plastics.</li>
-    <li>Avoid overfishing.</li>
-    <li>Protect our coral reef.</li>
-    <li>Don't throw waste at any water source.</li>
-  </ol>
-  </xmp>
+  <code>
+  &lt;ol><br>
+    &lt;li>Stop using plastics.&lt;/li><br>
+    &lt;li>Avoid overfishing.&lt;/li><br>
+    &lt;li>Protect our coral reef.&lt;/li><br>
+    &lt;li>Don't throw waste at any water source.&lt;/li><br>
+  &lt;/ol><br>
+  </code>
 </details>
 </div>
 <!--Tooltip starts-->
@@ -687,7 +711,7 @@ function slideLeft() {
 <div class="action">
   <p>This is a 
     <span class="tooltip">sample  
-      <span class="tooltiptext">Joy Barua</span></span>&nbsp tooltip
+      <span class="tooltiptext">Joy Barua</span></span>&#38;nbsp; tooltip
   </p>
 </div><!--Tooltip ends-->
 <div class="action">
@@ -695,37 +719,37 @@ function slideLeft() {
     <summary>HTML and CSS code for Tooltip</summary>
     <br>
     <h3>HTML Code</h3>
-    <xmp>
-      <p>This is a 
-        <span class="tooltip">sample  
-          <span class="tooltiptext">Joy Barua</span></span>&nbsp tooltip
-      </p>
-    </xmp>
+    <code>
+      &lt;p>This is a<br> 
+        &lt;span class="tooltip">sample<br>  
+          &lt;span class="tooltiptext">Joy Barua&lt;/span>&#38;nbsp tooltip<br>
+      &lt;/p><br>
+    </code>
+    <br>
     <h3>CSS Code</h3>
-    <xmp>
-      .tooltip {
-        position: relative;
-        display: inline-block;
-        border-bottom: 1px solid #6dcff6;
-      }
+    <code>
+      .tooltip {<br>
+        position: relative;<br>
+        display: inline-block;<br>
+        border-bottom: 1px solid #6dcff6;<br>
+      }<br>
       
-      .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
+      .tooltip .tooltiptext {<br>
+        visibility: hidden;<br>
+        width: 120px;<br>
+        background-color: black;<br>
+        color: #fff;<br>
+        text-align: center;<br>
+        border-radius: 6px;<br>
+        padding: 5px 0;<br>
+        position: absolute;<br>
+        z-index: 1;<br>
+      }<br>
       
-        /* Position the tooltip */
-        position: absolute;
-        z-index: 1;
-      }
-      
-      .tooltip:hover .tooltiptext {
-        visibility: visible;
-    </xmp>
+      .tooltip:hover .tooltiptext {<br>
+        visibility: visible;<br>
+      }<br>
+    </code>
   </details>
   </div>
 

@@ -20,7 +20,7 @@ window.addEventListener("resize", checkWidth);
 function checkWidth() {
     containerWidth = container.offsetWidth;
     setParams(containerWidth);
-}
+};
 
 function setParams(w) {
     if (w < 551) {
@@ -51,7 +51,7 @@ function setParams(w) {
     if (currentPosition >= slidesCount) {
         buttons[1].classList.add('inactive');
     }
-}
+};
 
 setParams();
 
