@@ -1,7 +1,7 @@
 "use strict";
 // The following Javascript code which is regarding carousels/sliders was taken from codepen.io site and then modified
 // the link of the copied code is as follows: https://codepen.io/hershkirsh/pen/BXBprB 
-var container = document.getElementById('container')
+var container = document.getElementById('container');
 var slider = document.getElementById('slider');
 var slides = document.getElementsByClassName('slide').length;
 var buttons = document.getElementsByClassName('btn');
@@ -20,7 +20,7 @@ window.addEventListener("resize", checkWidth);
 function checkWidth() {
     containerWidth = container.offsetWidth;
     setParams(containerWidth);
-};
+}
 
 function setParams(w) {
     if (w < 551) {
@@ -51,7 +51,7 @@ function setParams(w) {
     if (currentPosition >= slidesCount) {
         buttons[1].classList.add('inactive');
     }
-};
+}
 
 setParams();
 
@@ -67,7 +67,7 @@ function slideRight() {
     if (currentPosition < slidesCount) {
         buttons[1].classList.remove('inactive');
     }
-};
+}
 
 function slideLeft() {
     if (currentPosition != slidesCount) {
@@ -81,4 +81,4 @@ function slideLeft() {
     if (currentPosition > 0) {
         buttons[0].classList.remove('inactive');
     }
-};
+}

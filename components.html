@@ -417,7 +417,7 @@ window.addEventListener("resize", checkWidth);<br>
 function checkWidth() {<br>
     containerWidth = container.offsetWidth;<br>
     setParams(containerWidth);<br>
-};<br>
+}<br>
 
 function setParams(w) {<br>
     if (w &lt; 551) {<br>
@@ -448,7 +448,7 @@ function setParams(w) {<br>
     if (currentPosition >= slidesCount) {<br>
         buttons[1].classList.add('inactive');<br>
     }<br>
-};<br>
+}<br>
 
 setParams();<br>
 
@@ -464,7 +464,7 @@ function slideRight() {<br>
     if (currentPosition &lt; slidesCount) {<br>
         buttons[1].classList.remove('inactive');<br>
     }<br>
-};<br>
+}<br>
 
 function slideLeft() {<br>
     if (currentPosition != slidesCount) {<br>
@@ -478,7 +478,7 @@ function slideLeft() {<br>
     if (currentPosition > 0) {<br>
         buttons[0].classList.remove('inactive');<br>
     }<br>
-};<br>
+}<br>
 &lt;/script><br>
 
             </code>
